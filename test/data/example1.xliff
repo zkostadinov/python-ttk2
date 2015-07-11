@@ -1,0 +1,16 @@
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+	<file id="f1">
+		<notes>
+			<note id="n1">note for file.</note>
+		</notes>
+		<unit id="u1">
+			<notes>
+				<note id="n1">note for unit</note>
+			</notes>
+			<segment id="s1">
+				<source>Hello World</source>
+				<target>Bonjour le Monde!</target>
+			</segment>
+			</unit>
+	</file>
+</xliff>

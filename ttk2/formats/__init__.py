@@ -40,6 +40,10 @@ class Unit:
 	def __repr__(self):
 		return "<Unit %r: %s>" % (self.key, self.value)
 
+	def __eq__(self, other):
+		# maybe we need to include more fields here...
+		return isinstance(other, self.__class__) and self.key == other.key and self.value == other.value
+
 
 class POStore(Store):
 	GLOBS = ["*.po", "*.pot"]
@@ -279,6 +283,7 @@ class TMXStore(XMLStore):
 
 		return self._pretty_print(ElementTree.tostring(root))
 
+from ttk2.formats.xliff import XLIFFStore
 
 def guess_format(path):
 	"""
